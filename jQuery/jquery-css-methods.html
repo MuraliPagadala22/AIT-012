@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Methods - jQuery</title>
+	<style type="text/css">
+		.error{
+			color: red !important;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>jQuery Css Methods Examples</h1>
+	<div id="jq">jQuery</div>
+	<div id="css">CSS</div>
+	<div id="html">Html</div>
+	<div id="ng">Angular</div>
+	<script type="text/javascript">
+	//adding styles to the element using JS
+	document.getElementById('jq').style.border = "1px solid red";
+	document.getElementById('jq').style.padding = "10px";
+	document.getElementById('jq').style.backgroundColor = "#ccc";
+
+	//adding css to element using jQuery
+	//below exaples for single property addition 
+	$('#css').css('border','1px solid red');
+	//below example for multiple property additions
+	$('#css,#html,#ng').css({
+		'padding':'10px',
+		'background-color':'green',
+		'color':'#fff'
+	});
+	$('#css,#html,#ng').addClass('error');
+	//removeClass(),toggleClass()
+</script>
+</body>
+</html>

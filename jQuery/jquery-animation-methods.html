@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation Methods - jQuery</title>
+	<style type="text/css">
+		figure{
+			border: 1px solid red;
+			padding: 20px;
+		}
+		.hide{
+			display: none;
+		}
+		h1{
+			background-color: #ccc;
+			padding: 10px;
+		}
+		.mb-50{
+			margin-bottom: 50px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<figure>
+		<img src="../images/quote-1.jpg" alt="Apj sir">
+	</figure>
+	<figure>
+		<img src="../images/html.png" alt="Html" class="hide">
+	</figure>
+	<figure>
+		<img src="../images/css.png" alt="css" class="hide">
+	</figure>
+
+	<section class="mb-50">
+		<div>
+			<h1>Html</h1>
+			<p class="hide">Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web</p>
+		</div>
+		<div>
+			<h1>CSS</h1>
+			<p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+		</div>
+		<div>
+			<h1>JS</h1>
+			<p>JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		$(function(){		//short cut of document ready event
+			$('figure:first-child').on('click',function(){
+				$(this).hide();
+			});
+			$('figure:nth-child(2)').on('click',function(){
+				$(this).find('img').show();
+			});
+			$('figure:nth-child(3)').on('dblclick',function(){
+				$(this).find('img').toggle();
+			});
+
+			$('section div:first-child h1').on('click',function(){
+				$(this).next().slideDown();
+			});
+			$('section div:nth-child(2) h1').on('click',function(){
+				$(this).next().slideUp();
+			});
+			$('section div:last-child h1').on('click',function(){
+				$(this).next().slideToggle();
+			});
+			//fadeIn(),fadeOut(),fadeToggle().fadeTo(),animate()
+		});
+	</script>
+</body>
+</html>

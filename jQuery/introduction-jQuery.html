@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery introduction  - JQuery</title>
+	<!-- load jquery library -->
+	<!-- 1 - Manualy way
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
+	2 -  Using npm 
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>-->
+	<!-- 3 - loading through CDN(Content Delivery Network) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		// $(document).ready(function(){
+		// 	//jquery code we must place
+		// 	alert('Hi');
+		// });
+	</script>
+</head>
+<body>
+	<img src="../images/boolbool.jpg" alt="Balayya Babu">
+	<button >Hide</button><!-- onclick="hideBalayya()" -->
+	<script type="text/javascript">
+		// var cnt=1;
+		// function hideBalayya(){
+		// 	if(cnt%2==0){
+		// 		document.querySelector('img').style.display = "block";
+		// 	}else{
+		// 		document.querySelector('img').style.display = "none";
+		// 	}
+		// 	cnt++;
+			
+		// }
+		$('button').on('click',function(){
+			$('img').toggle();
+		});
+		
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Dom Manipulation Methods</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		$('body').prepend('<section></section>');
+		$('section').append('<div id="firstDiv"></div>');
+		$('section').append('<div id="secondDiv"></div>');
+		$('section').append('<div id="thirdDiv"></div>');
+		$('section').append('<div id="fourthDiv"></div>');
+		$('div').css('flex','1');
+		$('section').css('display','flex');
+		//adding new elements to firstDiv
+		var figElement = `<figure>
+								<img src='../images/wonders/taj.jpg' alt='Taj Mahal' />
+								<figcaption>Taj Mahal</figcaption>
+							</figure>`;
+		$('#firstDiv,#secondDiv,#thirdDiv,#fourthDiv').append(figElement).append(figElement).append(figElement).append(figElement);
+		//$('#firstDiv').append(figElement);
+		//$('#firstDiv').append(figElement);
+		$('figure').css({
+			'border':'1px solid red',
+			'padding':'10px'
+		});
+		$('figure img').css('width','100%');
+	</script>
+</body>
+</html>
