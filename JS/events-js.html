@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events - JS</title>
+	<style type="text/css">
+		div{
+			border: 1px solid red;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+	
+</head>
+<body onload="delay()">
+	<div id="div3">3
+		<div id="div2">2
+			<div id="div1">1</div>
+		</div>
+	</div>
+	<!--example for prevent default -->
+	<a href="https://opensourcezeal.wordpress.com/">Murali's Blog</a>
+	<script>
+		//events - to make web page interative
+		document.getElementById('div1').addEventListener('click',function(event){
+			event.stopImmediatePropagation();
+			alert('div1 clicked');
+		});
+		document.getElementById('div2').addEventListener('click',function(event){
+			event.stopPropagation();
+			alert('div2 clicked');
+		});
+		document.getElementById('div3').addEventListener('click',function(){
+			alert('div3 clicked');
+		});
+
+		document.querySelector('a').addEventListener('click',function(event){
+			event.stopImmediatePropagation();
+			event.preventDefault();
+		});
+		function delay(){
+			alert("hi");
+			setTimeout(function(){
+				alert('hello');
+			},5000)
+		}
+	</script>
+</body>
+</html>

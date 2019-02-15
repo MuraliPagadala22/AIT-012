@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conditions  - JS</title>
+	<script type="text/javascript">
+		function validateLogin(){
+			var user = document.getElementById('user').value;
+			var pass = document.getElementById('pass').value;
+			if(user==""){
+				alert('Boss please fill user name');
+			}else if(pass==""){
+				alert('Bos please fill password');
+			}else{
+				alert('we can submit form');
+				userlogin.submit();
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="#" method="POST" name="userlogin">
+		<input type="text" name="username" placeholder="Enter username" id="user">
+		<input type="password" name="password" placeholder="Enter Password" id="pass">
+		<input type="button" name="login" value="Login" onclick="validateLogin()">
+	</form>
+</body>
+</html>

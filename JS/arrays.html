@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays - JS</title>
+	<script type="text/javascript">
+		//an array to store multiple values into a single variable
+		// constructors way of creating 
+		var students = new Array('sachin','sehwag','ganguly','dhoni');
+		console.log(typeof students);
+		//array literal way
+		var players = ['virat','rohit','rahul','pandey','murali','pagadala'];
+		console.log(typeof players);
+
+		console.log('read values from an array manually');
+		console.log(players[0]);//virat
+		console.log(players[1]);//rohit
+		console.log(players[2]);//rahul
+		console.log(players[3]);//pandey
+		console.log(players[4]);//pandey
+		console.log(players[5]);//pandey
+
+		console.log('read values from an array using loops');
+
+		for(var i=0;i<players.length;i++){
+			console.log(players[i]);
+		}
+
+		//how to insert new record/s into array
+		//players[players.length] = "xyz";
+		players.push('bhoomra');
+		console.log(players);
+		players.push('bhuvi','sami');
+		console.log(players);
+		console.log(players.pop());
+		console.log(players);
+		players.unshift('aaa','bbb');
+		console.log(players);
+		players.shift();
+		console.log(players);
+		//adding element/s in the specified position
+		players.splice(1,0,'xyz','lmn');
+		console.log(players);
+		players.splice(4,2,'test player');
+		console.log(players);
+		console.log(players.slice(3,7));
+		console.log(players.reverse());
+		console.log(players.sort());
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

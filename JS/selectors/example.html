@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectors - JS</title>
+</head>
+<body>
+	<div>
+		<figure class="sample">
+			<img src="../../images/html.png" alt="HTML">
+			<figcaption>HTML1</figcaption>
+		</figure>
+		<figure>
+			<img src="../../images/html.png" alt="HTML">
+			<figcaption>HTML2</figcaption>
+		</figure>
+		<figure class="sample">
+			<img src="../../images/html.png" alt="HTML">
+			<figcaption>HTM3</figcaption>
+		</figure>
+	</div>
+	<div id="murali">Murali P</div>
+	<script>
+		//seelctors -which helps us select an element to add functionality 
+		//There are few ways to select element, such as
+		// 1) getElementByTagName()
+		document.getElementsByTagName('div')[1].style.backgroundColor = "Red";
+		//2) getElementsByClassName
+		document.getElementsByClassName('sample')[0].style.border = "1px solid blue";
+		document.getElementsByClassName('sample')[0].style.padding = "10px";
+		//3) getElementById()
+		document.getElementById('murali').style.fontSize = '30px';
+		//4) querySelector()- selecting first matched value
+		console.log(document.querySelector('figure figcaption'));
+		//5) QuerySelectorAll() - selecting all the matched values
+		console.log(document.querySelectorAll('figcaption'));
+	</script>
+</body>
+</html>

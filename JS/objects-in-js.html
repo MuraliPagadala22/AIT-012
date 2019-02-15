@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects  - JS</title>
+        <style>
+            table{
+                width: 100%;
+            }
+            table,td,th{
+                border: 1px solid red;
+                border-collapse: collapse;
+                padding: 20px;
+                font-size: 24px;
+            }
+            tr:nth-child(2n){
+                background-color: #eee;
+            }
+            tr:hover{
+                background-color: pink;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <table></table>
+        <script>
+                var students = [];
+                students[0] = "aaaa";//manually way of adding element to array
+                students.push('bbbb');//using push method
+                console.log(students);
+                //reading values from array 
+                console.log(students[0]);
+                var studentInfo = {};//empty object
+                studentInfo.name="Murali";
+                studentInfo.email = "m@gamil.com";
+                studentInfo.phone = "9060888029";
+                console.log(studentInfo);
+                console.log(studentInfo.name);
+    
+                var courseInfo = {
+                    name:"Ui development",
+                    duration:"3 months"
+                }
+                console.log(courseInfo);
+    
+                //combaining array and object together
+                var studentsDetails = [ 
+                        {name:"Sachin",email:"s@gmail.com",phone:"434343"},
+                        {name:"Gangulay",email:"g@gmail.com",phone:"32323232"},
+                        {name:"Yuvaraj",email:"yu@gmail.com",phone:"6564656565"},
+                        {name:"Dhoni",email:"d@gmail.com",phone:"434343434"}
+                    ]
+                    console.log(studentsDetails);
+                    var str = `<tr>
+                                <th>Sno</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Status</th>
+                            </tr>`;
+                    var sno = 1;
+                    for(var i=0;i<studentsDetails.length;i++){
+                        console.log(studentsDetails[i]);
+                        str +="<tr><td>"+sno+"</td><td>"+studentsDetails[i].name+"</td>";
+                        str +="<td>"+studentsDetails[i].email+"</td><td>"+studentsDetails[i].phone+"</td>";
+                        str +="<td> Active</td></tr>";
+                        sno++;
+                    }
+                    document.querySelector('table').innerHTML = str;
+    
+            </script>
+    </body>
+</html>

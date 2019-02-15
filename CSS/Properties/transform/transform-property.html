@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform Property - CSS3</title>
+	<style type="text/css">
+		div{
+			border: 1px solid red;
+			padding: 20px;
+			/*margin-top: 200px;*/
+			position: relative;
+			top: 200px;
+			left: 50%;
+			display: inline-block;
+		}
+		div:first-child{
+			transform: translate(100px,200px);
+		}
+		div:nth-child(2){
+			transform: rotate(90deg);
+		}
+		div:nth-child(3){
+			transform: scale(2,3);
+		}
+		div:nth-child(4){
+			transform: skew(155deg,155deg);
+		}
+	</style>
+</head>
+<body>
+	<div>Megha Family</div>
+	<div>Mahesh Babu</div>
+	<div>RAM</div>
+	<div>Jr NTR</div>
+</body>
+</html>

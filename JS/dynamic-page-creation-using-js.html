@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Page creation using JS</title>       
+    </head>
+    <body id="body">
+            <script>
+                    var mainContinerEle = document.createElement('section');
+                    mainContinerEle.setAttribute('style','display: flex;padding: 20px;border: 1px solid red;');
+                    var div1Ele = document.createElement('div');
+                    div1Ele.setAttribute('id','first');
+                    div1Ele.setAttribute('style','flex: 1;')      
+                    var figEle = document.createElement('figure');
+                    figEle.setAttribute('style','border: 1px solid red;padding:0px;')
+                    var imgEle = document.createElement('img');
+                    imgEle.setAttribute('src','../images/wonders/taj.jpg');
+                    imgEle.setAttribute('alt','Taj Mahal');
+                    imgEle.setAttribute('style','width: 100%;');
+                    var figCapEle = document.createElement('figcaption');
+                    figCapEle.innerText  =  'Taj Mahal';
+                    figEle.appendChild(imgEle);
+                    figEle.appendChild(figCapEle);
+
+                    div1Ele.appendChild(figEle);
+                    div1Ele.appendChild(figEle.cloneNode(true));
+                    div1Ele.appendChild(figEle.cloneNode(true));
+                    div1Ele.appendChild(figEle.cloneNode(true));
+                    div1Ele.appendChild(figEle.cloneNode(true));
+                    mainContinerEle.appendChild(div1Ele);
+
+                    var div2Ele = div1Ele.cloneNode(true);
+                    div2Ele.setAttribute('id','second');
+                    div2Ele.setAttribute('style','flex: 1;') 
+                    mainContinerEle.appendChild(div2Ele);
+                    var div3Ele = div1Ele.cloneNode(true);
+                    div3Ele.setAttribute('id','third');
+                    div3Ele.setAttribute('style','flex: 1;') 
+                    mainContinerEle.appendChild(div3Ele);
+        			
+        			 var div4Ele = div1Ele.cloneNode(true);
+                    div4Ele.setAttribute('id','third');
+                    div4Ele.setAttribute('style','flex: 1;') 
+                    mainContinerEle.appendChild(div4Ele);
+                    //document.getElementById('first').appendChild(figEle);
+                    //document.getElementById('first').appendChild(figEle);
+                    //document.getElementById('first').appendChild(figEle);
+        
+                    
+                    
+                    //console.log(mainContinerEle);
+                    document.getElementById('body').appendChild(mainContinerEle);
+                </script>
+    </body>
+</html>

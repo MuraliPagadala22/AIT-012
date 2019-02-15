@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - HTML</title>
+	<style type="text/css">
+		a{
+			flex:1;
+			font-size: 20px;
+			text-decoration: none;
+			color: red;
+		}
+		#container{
+			border: 1px solid red;
+		}
+
+	</style>
+</head>
+<body>
+<section id="container">
+	<header style="height: 50px;border-bottom: 1px solid red;display: flex;">
+		<div style="flex:2;">
+			<img src="../../images/google.png" style="width: 100%;height: 50px;">
+		</div>
+		<nav style="flex:10;display: flex;margin-top: 10px;">
+			<a href="home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
+	<section style="display: flex;">
+		<div style="flex: 3;height: 300px;">leftside bar</div>
+		<div style="flex: 6;height: 300px; border-left:1px solid red;border-right:1px solid red;">middle bar</div>
+		<div style="flex: 3;height: 300px;">rightside bar</div>
+	</section>
+	<footer style="border-top: 1px solid red;height: 50px;">footer</footer>
+</section>
+</body>
+</html>

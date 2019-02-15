@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Property - CSS</title>
+	<style type="text/css">
+
+	/*display  - which will change display style of html elements
+		display:none/block/inline/inline-block/flex;
+	*/
+		section{
+			display: flex;/* Example for display:flex;*/
+		}
+		section div{
+			flex: 1;
+			color: #310c0c;
+		}
+		section div:first-child{
+			background-color: lightgray;
+		}
+		section div:nth-child(2){
+			background-color: orange;
+		}
+		section div:nth-child(3){
+			background-color: blue;
+			flex: 8;
+		}
+		section div:nth-child(4){
+			background-color: red;
+			display: none;/* Example for display:none;*/
+		}
+		section div:last-child{
+			background-color: yellow;
+		}
+		span{
+			background-color: lightgreen;
+			display: block;
+			padding: 10px;
+			margin-bottom: 5px;
+			font-size: 24px;
+			font-weight: bold;
+			color: orange;
+		}
+		a{
+			width: 32.9%;
+			border:1px solid red;
+			display: inline-block;/* Example for display:inlin-block;*/
+			text-transform: capitalize;
+		}
+		h3{
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<span>Best Tutorials</span>
+	<a href="https://www.w3schools.com/">w3schools</a>
+	<a href="http://tutorialspoint.com">tutorialspoint</a>
+	<a href="http://www.tutorialsteacher.com/">tutorials teacher</a>
+	<h3>Welcome to display property</h3>
+	<section>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+	</section>
+</body>
+</html>

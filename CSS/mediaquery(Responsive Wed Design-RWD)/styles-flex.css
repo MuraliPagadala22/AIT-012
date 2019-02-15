@@ -1,0 +1,89 @@
+header,.middleContainer,.middleBlock{
+	display: flex;
+}
+header div{
+	flex: 2;
+}
+header nav{
+	flex: 10;
+}
+header img{
+	width: 100%;
+	height: 70px;
+}
+header nav ul{
+	display: flex;
+	margin: 20px 0 0 0;
+}
+header nav li{
+	flex: 1;
+	text-align: center;
+}
+header a{
+	font-size: 24px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+li{
+	list-style: none;
+}
+ul,ol{
+	padding: 0;
+	margin: 0;
+}
+.slider img{
+	width: 100%;
+	height: 400px;
+}
+.middleContainer{
+	height: 400px;
+}
+.middleContainer > div:first-child,
+.middleContainer > div:last-child,
+.middleBlock div,
+.middleBlock nav{
+	flex: 2;
+}
+.middleContainer div:nth-child(2){
+	flex: 8;
+}
+.middleContainer div:first-child li{
+	border-bottom: 1px solid lightgray;
+}
+.middleContainer div:first-child li:hover{
+	background-color: #0063a4;
+}
+.middleContainer li a{
+	width: 100%;
+	display: inline-block;
+	padding: 15px 10px;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+.middleContainer li a:hover{
+	color: #fff;
+}
+.active{
+	background-color: #0063a4;
+	color: #fff;
+}
+.middleBlock img{
+	width: 100%;
+	height: 300px;
+}
+.middleBlock nav{
+	padding: 20px;
+}
+.middleBlock nav li{
+	font-weight: bold;
+	line-height: 25px;
+}
+.middleBlock nav h3{
+	text-decoration: underline;
+	font-style: italic;
+}
+p{
+	text-align: justify;
+}

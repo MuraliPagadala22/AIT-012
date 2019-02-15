@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration  - html</title>
+</head>
+<body>
+	<fieldset>
+		<legend>User Registration</legend>
+		<form method="POST">
+			<table>
+				<tr>
+					<td>
+						<label for="fname">First Name</label>
+					</td> 
+					<td>
+						<input type="text" name="firstname" id="fname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="lname">Lastname</label>
+					</td>
+					<td>
+						<input type="text" name="lastname" id="lname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Email</label>
+					</td>
+					<td>
+						<input type="text" name="email">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phone
+					</td>
+					<td>
+						<input type="text" name="phone">
+					</td>
+				</tr>
+				<tr>
+					<td> Profile Picture</td>
+					<td>
+						<input type="file" name="profilepic">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Gendar
+					</td>
+					<td>
+						<input type="radio" name="gendar" value="male">Male
+						<input type="radio" name="gendar" value="female">Female
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Country
+					</td>
+					<td>
+						<select name="country">
+							<option value="">--select--</option>
+							<option value="in">India</option>
+							<option value="pk">Pakistan</option>
+							<option value="us">United States</option>
+							<option value="uk">United kingdom</option>
+							<option value="ch">China</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Skills
+					</td>
+					<td>
+						<input type="checkbox" name="skills" value="html">
+						<label>HTML</label>
+						<input type="checkbox" name="skills" value="css">
+						<label>CSS</label>
+						<input type="checkbox" name="skills" value="js">
+						<label>JS</label>
+						<input type="checkbox" name="skills" value="jquery">
+						<label>JQUERY</label>
+						<input type="checkbox" name="skills" value="angular">
+						<label>Angular</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Message
+					</td>
+					<td>
+						<textarea name="message"></textarea>
+					</td>
+				</tr>				
+				<tr>
+					<td>
+						<input type="submit" name="register" value="Create An Account">
+					</td>
+					<td>
+						<input type="reset" name="reset" value="Reset to defaults">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+</body>
+</html>

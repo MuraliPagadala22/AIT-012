@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition Property - CSS3</title>
+	<style type="text/css">
+		div{
+			border: 1px solid red;
+			padding: 20px;
+			/*transition: color 3s 2s linear;*/
+			transition-property: background-color,color,border-width,border-style;
+			transition-duration: 3s;
+			transition-delay: 2s;
+			transition-timing-function: ease-in-out;
+		}
+		div:hover{
+			background-color: green;
+			color: #fff;
+			border-width: 10px;
+			border-style: dashed;
+		}
+	</style>
+</head>
+<body>
+	<div>Abdul Kalam</div>
+</body>
+</html>

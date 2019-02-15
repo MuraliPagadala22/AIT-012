@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strings and arrays - JS</title>
+	<script type="text/javascript">
+		//string literal way
+		var course = "UI Development";
+		var trainer = 'madam';
+
+		console.log(typeof course);//string
+		console.log(typeof trainer);//string
+
+		//string constructor way
+		var institute = new String('AchieversIT Bangalore     ');
+		console.log(typeof institute);
+		//to find the no of characters in string
+		console.log(institute.length);
+		//string methods
+		var revTrainer = "";
+		for(var i=trainer.length-1;i>=0;i--){
+			
+			revTrainer += trainer[i];
+		}
+
+		console.log(revTrainer);
+
+		//another way to resverse string
+		console.log(course.split('').reverse().join(''));
+
+		/*String Methods*/
+		console.log(institute.charAt(9));//I
+		console.log(institute.charCodeAt(9));
+
+		//to restrict user to enter only number
+		function validateAadhar(e){
+			console.log(e.which);
+			var	prevVal = document.querySelector('input').value;
+			if(e.which >= 48 && e.which <= 57){
+				//alert("User can enter");
+			}else{
+				alert('Please enter only numbers');
+				document.querySelector('input').value = "";
+			}
+
+		}
+		function validateUserData(e){
+			e.preventDefault();
+			var profile = document.querySelector('input[type="file"]').value;
+			console.log(profile);
+			console.log(profile.split('.'));
+			var pArr = profile.split('.');
+			if(pArr[1]=="doc" || pArr[1]=="docx" || pArr[1]=="pdf"){
+				sendData.submit();
+			}else{
+				alert("Please slect proper format of a file")
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="#" name="sendData">
+		<input type="text" name="aadhar" placeholder="Enter Aadhar" onkeyup="validateAadhar(event)">
+		<input type="file" name="resume">
+		<span style="color: red;">(Select your profile doc,docx,pdf format)</span>
+		<input type="submit" name="send" value="Send" onclick="validateUserData(event)">
+	</form>
+</body>
+</html>

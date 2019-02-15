@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background  - CSS</title>
+	<style type="text/css">
+		div,li{
+			border: 1px solid red;
+			padding: 20px;
+			margin-bottom: 10px;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style: none;
+			text-transform: uppercase;
+		}
+		/*single color as a background*/
+		div:first-child{			
+			
+			background-color: lightgray;			
+		}
+		/*multiple colors as a background*/
+		div:nth-child(2){	
+
+			background: linear-gradient(to top,orange,white,green);			
+		}
+		/*example foe background images*/
+		li:first-child{
+			height: 200px;
+			background-image: url(../../../images/quote-1.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			/*background-size: 10% 10%;*/
+			background-attachment: fixed;
+			overflow: auto;
+		}
+		li:last-child{
+			border: 10px dashed orange;
+			background: url(../../../images/google.png);
+			background-origin: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div>Cascading style sheet</div>
+	<div>Javascript</div>
+	<ul>
+		<li>jQuery jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery  jQuery </li>
+		<li>Ajax</li>
+		<li>json</li>
+		<li>typescript</li>
+		<li>angular</li>
+		<li>node</li>
+		<li>mysql</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Psueduo Selectors - CSS3</title>
+	<style type="text/css">
+	/*psueduo element selector(:)*/
+		div div:first-child{
+			background-color: orange;
+		}
+		div div:nth-child(2){
+			background-color: white;
+		}
+		div div:last-child{
+			background-color: green;
+		}
+		tr:hover{
+			color: #fff;
+		}
+		tr:nth-child(2n){
+			background-color: green;
+		}
+		tr:nth-child(2n+1){
+			background-color: orange;
+		}
+
+		/*Anchor tag has psueduo selectors*/
+		/*a:link,a:visited,a:hover,a:active*/
+		/*forms psueduo selectors*/
+		/*:input,input:checked,input:selected,:disabled,:focus;*/
+		/*psueduo class selectors(::)*/
+		::selection {
+			background-color: red;
+			color: #fff;
+		}
+		p::first-letter{
+			color: red;
+		}
+		p::after{
+			content: " Murali  ";
+		}
+		p::before{
+			content: " Pagadala  ";
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>HTML</div>
+		<div>CSS</div>
+		<div>JS</div>
+	</div>
+	<table border="1" cellspacing="0" cellpadding="10" width="100%">
+		<tr>
+			<th>Sno</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Qualification</th>
+			<th>Location</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Ramanjaneyulu</td>
+			<td>r@gmail.com</td>
+			<td>786868568767</td>
+			<td>Btech(mecha</td>
+			<td>Btm</td>
+			<td>Active</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Sai Bharath</td>
+			<td>sb@gmail.com</td>
+			<td>43434343</td>
+			<td>Btech(EEE)</td>
+			<td>BTM</td>
+			<td>Active</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Animesh</td>
+			<td>a@gmail.com</td>
+			<td>76567556434</td>
+			<td>Intermediate</td>
+			<td>BTM</td>
+			<td>Active</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Jagapathi</td>
+			<td>j@gmail.com</td>
+			<td>3434343434</td>
+			<td>Btech(CS)</td>
+			<td>Hebbagudi</td>
+			<td>Acitve</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Srikanth</td>
+			<td>s@gmail.com</td>
+			<td>434343434</td>
+			<td>Bsc(CS)</td>
+			<td>BTM</td>
+			<td>Active</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Jaswanth</td>
+			<td>j@gmail.com</td>
+			<td>434343434</td>
+			<td>Btech(Ece)</td>
+			<td>HSR Layout</td>
+			<td>Active</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Sravya</td>
+			<td>sr@gmail.com</td>
+			<td>43436464364</td>
+			<td>Btech</td>
+			<td>BTM</td>
+			<td>Active</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Murali</td>
+			<td>m@gmail.com</td>
+			<td>43434343</td>
+			<td>MCA</td>
+			<td>BTM</td>
+			<td>In-Active</td>
+		</tr>
+		<tr>
+			<td colspan="7" align="center">Desined by Murali Pagadala</td>
+		</tr>
+	</table>
+	<p>Welcome to css</p>
+	<p>Welcome to css</p>
+	<p>Welcome to css</p>
+	<p>Welcome to css</p>
+	<p>Welcome to css</p>
+	<p>Welcome to css</p>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectors - CSS</title>
+	<style type="text/css">
+		/*Selectors - which help us to select html element so that we apply css properties to make page beautiful*/
+
+		/*Global Selector(*)*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*tag/element selector*/
+		div{
+			border: 1px solid red;
+		}
+		p{
+			color: green;
+		}
+		/*class Seelctor(.)*/
+		.even{
+			background-color: lightblue;
+			padding: 20px;
+			margin: 10px 5px;
+		}
+		.odd{
+			background-color: lightgreen;
+		}
+		/*Id Selectors(#)*/
+		#mainContainer{
+			margin: 0 auto;
+			width: 50%;
+		}
+		/*#html{
+			border: 1px solid blue;
+		}*/
+		/*Attribute selectors[] */
+		/*has attribute [class]*/
+		[class]{
+			border: 1px solid green;
+		}
+		[href]{
+			text-decoration: none;
+		}
+		/*attribute value is equals to*/
+		[class="even"]{
+			color: #fff;
+		}
+		[href="contact.html"]{
+			color: red;
+		}
+		/*attribute value ends with*/
+		[href $='s.html']{
+			color: pink;
+		}
+		[class $= 'en']{
+			border-radius: 10px;
+		}/*attribute value starts with*/
+		[href ^='ho']{
+			font-size: 24px;
+		}
+		[class^='od']{
+			color: red;
+			border: 1px solid yellow;
+		}
+		/*attribute value contains*/
+		[href *="con"]{
+			font-size: 30px;
+		}
+		/***Child selectors *****/
+		/*direct child selector(>)*/
+		section>ul>li{
+			border: 1px solid red;
+		}
+		/*indirect / Decendant selector( )*/
+		/*ul li{
+			font-size: 28px;
+		}
+		*/		
+		/*.course li{
+			font-size: 28px;
+		}*/
+		[class="course"] li{
+			font-size: 28px;
+		}
+		/*sibling selectors*/
+		/*general sibling selector(~)*/
+		body>ol li:first-child ~ li{
+			color: green;
+		}
+		/*adjacent sibling selector(+)*/
+		body>ol li:first-child + li{
+			border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<section id="mainContainer">
+		<h1 class="">Welcome to css </h1>
+		<div class="odd" id="html">HTML</div>
+		<div class="even">CSS</div>
+		<div class="odd">JS</div>
+		<div class="even">jQuery</div>
+		<p class="even">Welcome to css selectors</p>
+	</section>
+	<nav>
+		<a href="home.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="services.html">Services</a>
+		<a href="clients.html">Clients</a>
+		<a href="contact.html">Contact</a>
+		<a>Google</a>
+	</nav>
+	<!-- The folowing example explains about child selectors -->
+	<section>
+		<ul class="course">
+			<li>HTML
+				<ol>
+					<li>HTML 1.0</li>
+					<li>HTML 2.0</li>
+					<li>HTML 3.0</li>
+					<li>HTML 4.0</li>
+					<li>HTML 5.0</li>
+				</ol>
+			</li>
+			<li>CSS
+				<ul>
+					<li>Css 1.0</li>
+					<li>Css 2.0</li>
+					<li>Css 3.0</li>
+				</ul>
+			</li>
+			<li>Javascript</li>
+		</ul>
+	</section>
+	<!-- the following example expalins about sibling selectors -->
+	<ol>
+		<li>Chiranjeevi</li>
+		<li>Naga Babu</li>
+		<li>Pavan kalyan</li>
+	</ol>
+</body>
+</html>

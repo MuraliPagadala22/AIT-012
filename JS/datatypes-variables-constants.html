@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datatypes, variables and constants - JS</title>
+	<script>
+		/*
+		Datatypes  - To set the types of a value into a identifiers
+
+		The following are the types of Datatyoes available in JS
+		1) Number - numeric values(int,float,double etc..)
+		2) string -sequesnce of characters
+		3) boolean  - true/flase
+		4) null - not empty and no value
+		5) undefined - value is not set to indentifiers
+		6) Object - named keys
+		*/
+		var course = 'UI Development';
+		console.log(typeof course);
+		alert(course);
+		var duration = 3;
+		console.log(typeof duration);
+
+		var isClassThere = true;
+		console.log(isClassThere);
+		console.log(typeof isClassThere);
+		var trainer = null;
+		console.log(typeof trainer);
+		trainer = "Murali P";
+		console.log(typeof trainer);
+		var fees;
+		console.log(typeof fees);
+
+		/*variables  - it is a data structure which stores information to be re-used
+		 creating a variable - We should use 'var' keyword 
+		*/
+		var institute_no_1 = "AchiversIT";
+		/*Rules while creating idenftifiers
+			1) varaible name shouldn't be a reserve word(var,if,else,while,for etc..)
+			2) varaible name shouldn't start with numbers
+				ex - var 7g = "Brindhavan colony"; - Invalid
+					var g7 = "Brindhavan colony";  - Valid
+			3) variables name should contain any special characters other than underscore(_)
+				ex  - var user name - invalid(since space is there)
+						var username,user_name,userName - valid
+		*/
+		console.log(institute_no_1);
+
+		/*constants - which stores infromation that can't be changes during run time
+			creating constant - we should use 'const' keyword
+		*/
+		const PI = 3.14;
+		console.log(typeof PI);
+		//PI = 3.14;//Uncaught TypeError: Assignment to constant variable.
+	</script>
+</head>
+<body>
+
+</body>
+</html>
